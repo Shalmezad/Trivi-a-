@@ -21,11 +21,11 @@ Basic ideas:
 
 >Questions are divided into Easy, Medium, and Hard difficulties.
 
-        >4 options per question.
+>       4 options per question.
         
 >10 questions per round.
 
-        >4 easy, 4 medium, and 2 hard.
+>       4 easy, 4 medium, and 2 hard.
 
 Contact Information:
 --
