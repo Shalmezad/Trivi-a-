@@ -1,0 +1,11 @@
+class CreateQuestions < ActiveRecord::Migration
+  def change
+    create_table :questions do |t|
+      t.String :question
+      t.text :answers
+      t.text :tags
+
+      t.timestamps
+    end
+  end
+end
