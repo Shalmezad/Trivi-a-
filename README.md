@@ -1,4 +1,4 @@
 Trivi-a-
 ========
 
-A quiz game created by /a/
+A quiz game created by /a/, MIT Licensed.
