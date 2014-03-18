@@ -27,8 +27,18 @@ Basic ideas:
 
         >4 easy, 4 medium, and 2 hard.
 
-E-mails:
+Contact Information:
 --
-OP's email (send question ideas and related things): trivislasha@gmail.com
+Join us on irc at #trivi/a/dev on rizon.
 
-sadpandashitposter's email (some kind of head programmer): sadpandashitposter@loves.dicksinhisan.us
+### E-mails
+Person           |    E-Mail
+---------------- | ----------------
+SadPandShitposter| sadpandashitposter@loves.dicksinhisan.us
+TriviaOP         | trivislasha@gmail.com
+
+### Who?
+
+TriviaOP: Main manager person.
+
+sadpandashitposter: Some kind of head programmer
