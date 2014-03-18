@@ -3,7 +3,7 @@ Trivi-a-
 
 A quiz game created by /a/, MIT Licensed.
 
-Backend written in node.js
+Backend written in rails 
 
 Started by shitposting in a thread on /a/ (https://archive.foolz.us/a/thread/103877563/#103881427)
 

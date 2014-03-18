@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
 
-question = Question.create(question:"Who is programming this?" answers:"You|Anon|Shalmezad" tags:"programming, debug" )
+question = Question.create(question:"Who is programming this?", answers:"You|Anon|Shalmezad", tags:"programming, debug" )
 
 #Add more questions here
 #The answers should be divided using the pipe symbol (|, it's found above the enter key usually)

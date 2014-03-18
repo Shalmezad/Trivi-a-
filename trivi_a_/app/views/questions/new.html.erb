@@ -1,0 +1,55 @@
+<%= form_for @question do |f| %>
+	<%= f.label :question %>
+	<%= f.text_field :question %>
+	<br />
+	<%= f.label :answers %>
+	<%= f.hidden_field :answers %>
+	<br />
+	<label class="sub_label" for="question_correct_answer">
+		Correct answer
+	</label>
+	<input id="correct_answer" type="text" />
+	<br />
+	<label class="sub_label" for="question_wrong_answer">
+		Wrong answer
+	</label>
+	<input id="temp_answer" type="text" /> 
+	<button id="add_answer" type="button" /> Add answer</button>
+	<br />
+	<%= f.label :tags %>
+	<%= f.hidden_field :tags %>
+	<input id="temp_tag" type="text" />
+	<button id="add_tag" type="button">Add Tag</button><br />
+	<div id="tag_list">
+	</div>
+
+
+
+	<script type="text/javascript">
+		$("#correct_answer").change(function(){
+
+		});
+		$("#add_tag").click(function()
+		{
+			//get the tag
+			var tag=$("#temp_tag").val();
+			//get the current list of tags
+			var temp_val=$("#question_tags").val();
+			//Add a seperator if needed
+			if(temp_val.length > 0)
+			{
+				temp_val += "|"; 
+			}
+			//Add the new tag
+			temp_val += tag;
+			//Set the hidden field (for submitting)
+			$("#question_tags").val(temp_val);
+			//Add to the div (for user feedback)
+			var label=$('<div class="tag">' + tag + '</div>');
+			$("#tag_list").append(label);
+
+			//Clear the visible field
+			$("#temp_tag").val("");
+		});
+	</script>
+<% end %>
