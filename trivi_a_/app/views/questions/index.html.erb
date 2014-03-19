@@ -1,0 +1,15 @@
+
+<table>
+	<th>
+		<td>Question</td>
+		<td>Answers</td>
+		<td>Tags</td>
+	<th>
+	<% @questions.each do |q| %>
+		<tr>
+			<td><%= q.question %></td>
+			<td><%= q.answers %></td>
+			<td><%= q.tags %></td>
+		</tr>
+	<% end %>
+</table>

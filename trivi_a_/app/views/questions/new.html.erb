@@ -14,7 +14,10 @@
 		Wrong answer
 	</label>
 	<input id="temp_answer" type="text" /> 
+	<input id="wrong_answers" type="hidden" />
 	<button id="add_answer" type="button" /> Add answer</button>
+	<div id="wrong_answer_list">
+	</div>
 	<br />
 	<%= f.label :tags %>
 	<%= f.hidden_field :tags %>
@@ -23,11 +26,36 @@
 	<div id="tag_list">
 	</div>
 
-
+	<%= f.submit %>
 
 	<script type="text/javascript">
+		function updateAnswers()
+		{
+			var correct_answer=$("#correct_answer").val();
+			var wrong_answers=$("#wrong_answers").val();
+			var answers=correct_answer;
+			if(wrong_answers.length >0)
+			{
+				answers += "|" + wrong_answers;
+			}
+			$("question_answers").val(answers);
+		}
 		$("#correct_answer").change(function(){
-
+			updateAnswers();
+		});
+		$("#add_answer").click(function(){
+			var wrong_answer=$("#temp_answer").val();
+			var temp_answer=$("#wrong_answers").val();
+			//add seperator if needed
+			if(temp_answer.length > 0)
+			{
+				temp_answer += "|";
+			}
+			temp_answer += wrong_answer;
+			$("#wrong_answers").val(temp_answer);
+			var label=$('<div class="answer">' + wrong_answer + '</div>');
+			$("#wrong_answer_list").append(label);
+			updateAnswers();
 		});
 		$("#add_tag").click(function()
 		{
