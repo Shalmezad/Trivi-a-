@@ -1,7 +1,2 @@
-*.rb~
-*.md~
-*.js~
-*.erb~
-*.rb~
-trivi_a_/db/seeds.rb~
-trivi_a_/db/.seeds.rb.swp
+*~
+*.swp
